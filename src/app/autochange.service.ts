@@ -53,7 +53,6 @@ export function AutoMark() {
 }
 
 function decorator(propertyName: string, targetedClass: any) {
-    let valueProperty = '$__ac__' + propertyName;
 	defineProperty(targetedClass, propertyName);
 }
 
